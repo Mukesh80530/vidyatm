@@ -1,2 +1,2 @@
 # vidyatm
-this is simple static website 
+this is a simple static website, which contain HTML 5, CSS and Java Script
