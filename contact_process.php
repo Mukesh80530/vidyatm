@@ -1,9 +1,9 @@
 <?php
 
-    $to = "rockybd1995@gmail.com";
+    $to = "rockybd1995@gmail.com"; 
+    $fname = $_REQUEST['fname']; 
+    $lname = $_REQUEST['lname']; 
     $from = $_REQUEST['email'];
-    $name = $_REQUEST['name'];
-    $subject = $_REQUEST['subject'];
     $number = $_REQUEST['number'];
     $cmessage = $_REQUEST['message'];
 
