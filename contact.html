@@ -21,6 +21,38 @@
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // Initialize EmailJS with your user ID
+            emailjs.init("YOUR_PUBLIC_KEY"); // Replace YOUR_PUBLIC_KEY with your actual EmailJS public key
+        })();
+
+        // This function will be called when the user clicks the send button
+        function sendEmail() {
+            // Get the form input values
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var message = document.getElementById('message').value;
+
+            // Create a template parameter object
+            var templateParams = {
+                from_name: name,
+                from_email: email,
+                message: message
+            };
+
+            // Send the email using EmailJS
+            emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", templateParams) // Replace YOUR_SERVICE_ID and YOUR_TEMPLATE_ID with your actual IDs
+            .then(function(response) {
+                console.log('SUCCESS!', response.status, response.text);
+                alert('Your message has been sent successfully!');
+            }, function(error) {
+                console.log('FAILED...', error);
+                alert('Failed to send the message. Please try again.');
+            });
+        }
+    </script>
 </head>
 <!--? Preloader Start -->
 <div id="preloader-active">
