@@ -348,7 +348,7 @@ ul.gj-list-md li.disabled>[data-role="wrapper"]>[data-role="display"] {
 .gj-picker-md [role="header"] {
     color: rgba(255, 255, 255, 0.54);
     display: flex;
-    background: #2196f3;
+    background: #27b11a;
     align-items: baseline;
     user-select: none;
     justify-content: center;
