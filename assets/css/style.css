@@ -332,7 +332,7 @@ hr {
   top: 0;
   width: 101%;
   height: 101%;
-  background: #ae59ff;
+  background: #cc5515;
   z-index: 1;
   border-radius: 5px;
   transition: transform 0.5s;
@@ -2268,7 +2268,7 @@ hr {
   text-transform: capitalize;
 }
 .main-header .main-menu ul li:hover > a {
-  color: #fff;
+  color: #cd6a2c;
 }
 .main-header .main-menu ul ul.submenu {
   position: absolute;
@@ -3552,7 +3552,7 @@ hr {
   text-align: center;
 }
 .topic-area .single-topic .topic-content-box .topic-content h3 a {
-  color: #ffffff;
+  color: #4e0202;
   font-weight: 700;
   font-size: 20px;
   margin-bottom: 0px;
